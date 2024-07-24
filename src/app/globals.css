@@ -108,7 +108,7 @@ main {
   background-attachment: scroll;
   border: var(--border-size) solid var(--backup-border);
   position: relative;
-  touch-action: none;
+ 
 }
 
 [data-glow]::before,
