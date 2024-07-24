@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+.header {
+  color: white;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
+}
+
+.header.scrolled {
+  background-color: #1A191D;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.navList li {
+  margin: 0 1em;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  margin-top: 10px;
+}
+
+.navList li:hover {
+  color: #ffffff;
+}
+
+/* Nueva clase para manejar el estado de hover en toda la lista */
+.navList.hovered li {
+  color: #999; /* Color gris para todos los elementos cuando uno está hovered */
+}
+
+/* Nueva clase para el elemento hovered */
+.navList.hovered li.hoveredItem {
+  color: #ffffff; /* Color para el elemento hovered */
+}
+
+.menuButton {
+  display: none;
+  position: absolute;
+  top: 20px;
+  background-color: rgba(26, 25, 29, 0.5);
+  color: aliceblue;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  font-size: 1.5em;
+  z-index: 1001;
+  font-size: 30px;
+}
+
+.menuOpen {
+  display: flex;
+}
+
+.Aimino {
+  margin-top: 0;
+}
+.circleRotation{
+margin-top: 420px;
+margin-left: 200px;
+}
+@media (max-width: 768px) {
+  .navList {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #1A191D;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .Aimino {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .navList.menuOpen {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 100px;
+  }
+
+  .navList li {
+    margin: 1em 0;
+    text-align: center;
+    color: white;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .header {
+    position: absolute;
+  }
+}

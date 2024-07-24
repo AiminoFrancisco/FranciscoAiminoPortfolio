@@ -1,0 +1,45 @@
+/* components/AnimatedArrow.module.css */
+.arrow {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 50px;
+}
+
+.circle {
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 3;
+  animation: expand 3s infinite;
+}
+
+.arrowPath {
+  stroke: #ffffff;
+  stroke-width: 3;
+  opacity: 0;
+  animation: draw 3s infinite;
+}
+
+@keyframes expand {
+  0% {
+    r: 25;
+  }
+  50% {
+    r: 35;
+  }
+  100% {
+    r: 25;
+  }
+}
+
+@keyframes draw {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

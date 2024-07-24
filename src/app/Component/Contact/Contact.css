@@ -1,0 +1,390 @@
+/* Contact.css */
+
+.containerContact {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Cambiar a columna por defecto */
+  justify-content: flex-start; /* Alinear contenido arriba */
+  align-items: center; /* Centrar elementos horizontalmente */
+  background-color: #2d2e30;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 1px 10px rgba(59, 123, 133, 0.5);
+  border-top: 2px solid #79daeb;
+  border-right: 2px solid #79daeb;
+  border-left: 2px solid #79daeb;
+}
+.contactLinks {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: rgb(165, 161, 161);
+  font-size: 16px;
+  align-content: flex-end;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: default;
+
+  cursor: pointer;
+  border-bottom:1px solid  #0e76a8;
+}
+.contactLinksGitHub{
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: rgb(165, 161, 161);
+  font-size: 16px;
+  align-content: flex-end;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: default;
+
+  cursor: pointer;
+  border-bottom:1px solid  #171515;
+}
+.contactLinksWhatsapp{
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: rgb(165, 161, 161);
+  font-size: 16px;
+  align-content: flex-end;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: default;
+
+  cursor: pointer;
+  border-bottom:1px solid  #40BF50;
+}
+
+
+
+
+
+.contactDescargarImg{
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px 10px;
+border-bottom:1px solid  #d4d4d4;
+  font-size: 16px;
+  align-content: flex-end;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: default;
+
+  cursor: pointer;
+}
+.contactLinks a,
+.contactLinksGitHub a,
+.contactLinksWhatsapp a {
+  color: white; /* Color del texto del enlace */
+  text-decoration: none; /* Elimina el subrayado */
+  outline: none; /* Elimina el borde de enfoque */
+  box-shadow: none; /* Elimina cualquier sombra aplicada por el enfoque */
+  border: none; /* Elimina cualquier borde aplicado */
+}
+.contactLinks a:hover {
+  color: rgb(255, 5, 5); /* Color del texto al pasar el mouse */
+}
+.linkedin-link a:hover {
+  color: #0e76a8; /* Azul de LinkedIn */
+}
+
+.github-link a:hover {
+  color: #171515; /* Negro de GitHub */
+}
+
+.whatsapp-link a:hover {
+  color: #40BF50; /* Verde de WhatsApp */
+}
+
+
+.contactLinks a:focus,
+.contactLinksGitHub a:focus,
+.contactLinksWhatsapp a:focus {
+  text-decoration: none; /* Elimina el subrayado cuando está enfocado */
+  outline: none; /* Elimina el borde de enfoque cuando está enfocado */
+  box-shadow: none; /* Elimina cualquier sombra aplicada por el enfoque */
+}
+.social-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+}
+
+.contentContact {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Mostrar en columna por defecto */
+   align-items: center; /* Centrar contenido */
+}
+
+.textContainer {
+  width: 100%; /* Ocupar todo el ancho disponible */
+
+
+  margin-bottom: 20px; /* Añadir margen inferior general */
+}
+.imgWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Mostrar en columna por defecto */
+  justify-content: center;
+  align-items: center;
+height: 100%;
+
+  
+  overflow: hidden;
+}
+
+.imgContainerReco {
+  width: 60%;
+  height: auto; /* Ajuste para que la imagen sea responsive */
+  overflow: hidden;
+
+  cursor: pointer;
+}
+.contactDetails {
+  
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  color: #fff;
+ 
+  border-radius: 5px; /* Opcional: Añadir bordes redondeados */
+  text-align: center; /* Opcional: Centrar el texto */
+}.contactDetails div {
+  margin-bottom: 5px;
+}
+.imgReco {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.titleReco {
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  
+}
+.linksContainer {
+  width: 97%; /* Ocupar todo el ancho disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+
+.socialicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  margin: 10px;
+  }
+  
+
+  .socialicon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #2D2E30;
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+.socialiconcircle1
+{
+  
+width:150px;
+height:150px;
+position:absolute;
+left:0px;
+top:100px;
+-webkit-animation:fill 3s infinite;
+-moz-animation:fill 3s infinite;
+animation:fill 3s infinite;
+
+}
+
+.socialiconcircle2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background: #2D2E30;
+    top: 3px;
+    left: 3px;
+    
+}
+.socialicons-container {
+    display: flex; /* Usa Flexbox para la alineación */
+    justify-content: center; /* Opcional: centra los iconos horizontalmente */
+    flex-wrap: wrap; /* Opcional: permite que los iconos se envuelvan en múltiples líneas si no caben en una sola fila */
+
+  }
+  .zoomIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+
+
+  }
+.icons
+{
+font-size:1em;
+position:absolute;
+left: 33px;
+top: 33px;
+-webkit-animation:iconjump 3s infinite;
+-moz-animation:iconjump 3s infinite;
+animation:iconjump 3s infinite;  
+}
+
+/* fill color */  
+.dribbblecolor{background:#ea4c89;}
+.facebookcolor{background:#3b5998;} 
+.googlecolor{background:#dd4b39;} 
+.flickrcolor{background:#ff0084;}
+.pinterestcolor{background:#c8232c;}
+.youtubecolor{background:#c4302b;}
+.githubcolor{background:#171515;}
+.linkedincolor{background:#0e76a8;}
+.tumblrcolor{background:#34526f;}
+.whatsappcolor{background: #40BF50;}
+/* icons color */  
+.dribbble{color:#ea4c89!important}
+.facebook{color:#3b5998!important}
+.google{color:#dd4b39!important}                                   
+.flickr{color:#ff0084!important}
+.pinterest{color:#c8232c!important;}
+.youtube{color:#c4302b!important;}  
+.github{color:#171515!important;}  
+.linkedin{color:#0e76a8!important;} 
+.tumblr{color:#34526f!important;}
+
+
+/* fill background */      
+@-webkit-keyframes fill
+{
+0%{top:100px;}
+100%{top:0px;}
+}
+
+@-moz-keyframes fill
+{
+0%{top:100px;}
+100%{top:0px;}
+}
+
+@keyframes fill
+{
+0%{top:100px;}
+100%{top:0px;}
+}
+
+/* jump social icons */
+@-webkit-keyframes iconjump
+{
+0%{top:33px;}
+10%{top:70px;}
+20%{top:33px;}
+50%{top:33px;}
+90%{top:33px;} 
+100%{top:33px;}
+}
+
+@-moz-keyframes iconjump
+{
+0%{top:33px;}
+10%{top:70px;}
+20%{top:33px;}
+50%{top:33px;}
+90%{top:33px;} 
+100%{top:33px;}
+}
+
+@keyframes iconjump
+{
+0%{top:33px;}
+10%{top:70px;}
+20%{top:33px;}
+50%{top:33px;}
+90%{top:33px;} 
+100%{top:33px;}
+}
+
+@media (min-width: 768px) {
+  .containerContact {
+    flex-direction: row; /* Cambiar a fila en dispositivos grandes */
+    align-items: flex-start;
+    width: 80%;
+  }
+  .contentContact {
+    flex-direction: row; /* Cambiar a fila en dispositivos grandes */
+  }
+
+  .textContainer {
+    flex: 1;
+    margin-right: 20px; /* Espacio entre textContainer e imgWrapper */
+  }
+
+  .linksContainer {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .social-icons-wrapper {
+    flex-direction: row;
+  }
+
+  .social-icon-item {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .contactDetails {
+    font-size: 0.9rem; /* Reducir el tamaño de fuente en pantallas más pequeñas */
+    padding: 8px; /* Reducir el padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .contactDetails {
+    font-size: 0.8rem; /* Aún más pequeño en pantallas muy pequeñas */
+    padding: 6px; /* Aún más pequeño padding */
+  }
+}

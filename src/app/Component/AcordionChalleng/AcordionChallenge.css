@@ -1,0 +1,121 @@
+.accordionChallenge {
+  width: 50%; /* Establece el ancho del acordeón al 60% */
+  max-width: 100%; /* Asegúrate de que no exceda el ancho del contenedor */
+  margin: 0 auto; /* Centra el acordeón horizontalmente */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 10px rgba(59, 123, 133, 0.5);;
+  animation: shadowPulse 2s infinite; /* Aplica la animación */
+  margin-bottom: 20px;
+}
+
+
+
+.accordion-header.active {
+  background-color: #1a191d;
+}
+
+.toggle-icon {
+  font-size: 1.5em;
+  transition: transform 0.3s;
+}
+
+.toggle-icon.open {
+  transform: rotate(180deg);
+}
+
+.accordion-header .title-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.accordion-header .date {
+  margin-left: auto; /* Alinea la fecha a la derecha */
+  margin-right: 20px;
+}
+
+.imgGett {
+  max-width: 100%;
+  height: auto;
+}
+
+/* YourStyles.css */
+/* YourStyles.css */
+.content {
+  display: flex;
+  align-items: flex-start; /* Alinea verticalmente al inicio */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Toma el espacio restante disponible */
+}
+
+.titleUbication {
+  margin-bottom: 10px;
+  text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
+}
+
+.image {
+  width: 45%; /* Ajusta el ancho de la imagen según sea necesario */
+}
+
+.imgGett {
+  width: 100%;
+  height: auto;
+  display: block; /* Asegura que la imagen se ajuste correctamente al contenedor */
+}
+
+.challengeTitle {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 26px;
+  color: #999;
+}
+
+.challengeDescription {
+  display: block;
+
+  font-size: 16px;
+  width: 76%;
+}
+
+.challengeDescription ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+.challengeDescription li {
+  margin-bottom: 5px;
+}
+
+.descriptionDeTitulosChallenge{
+    display: block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+   
+  }
+
+
+  @media (max-width: 768px) {
+    .accordionChallenge {
+      width: 90%; /* Establece el ancho del acordeón al 60% */
+    /* Asegúrate de que no exceda el ancho del contenedor */
+    
+    }
+    .accordion-header .title-container {
+ 
+      font-size: 1.1rem;
+    }
+    .challengeDescription {
+     
+      width: 100%;
+    }
+  }

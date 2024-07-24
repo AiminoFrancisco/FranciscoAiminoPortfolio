@@ -1,0 +1,16 @@
+.containerImgMap {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: zoom-in; /* Indica que se puede hacer zoom */
+  }
+  
+  .containerImgMap img {
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  }
+  
+  .containerImgMap:hover img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    opacity: 0.9; /* Cambia la opacidad para un efecto más sutil */
+  }
+  

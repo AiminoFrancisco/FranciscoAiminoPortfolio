@@ -1,230 +1,418 @@
+/* page.module.css */
+/* Ejemplo de importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.cutomSelectionExperiencia{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+
+}
 .main {
+  background-color: #1A191D;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif,Poppins;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh; /* Ajusta la altura según sea necesario */
+  background: linear-gradient(to bottom, rgba(41, 40, 48, 0) 0%, #1A191D 100%);
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 20px; /* Ajusta según sea necesario */
+
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleName{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-family: sans-serif;
+  transform: scaleY(1.1);
+}
+.titleName h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.titleName h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px; /* Ajusta el grosor del subrayado */
+  background-color: #ffffff; /* Ajusta el color del subrayado */
+  transition: width 0.3s ease; /* Ajusta la duración y el efecto de transición */
+
+}
+
+.titleName h1:hover::after {
+  width: 100%;
+}
+
+
+
+.titleSecondary {
+  margin-top: 170px; /* Reducir el margen superior */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px; /* Reducir el tamaño de la fuente */
+  font-family: 'Roboto Mono'; /* Asegurarse de que la fuente esté entre comillas y especificar que es monospace */
+  letter-spacing: 1px; /* Añadir un poco de espaciado entre letras para más legibilidad */
+  color:#FFFDF8
+
+}
+
+
+
+.parentContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
+  align-items: center; /* Centra horizontalmente */
+  justify-content: flex-start; /* Asegura que los elementos se alineen desde la parte superior */
+  padding: 20px;
+  touch-action: auto;
+ 
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
+}
+.parentContainerAcordion{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: flex-start; /* Asegura que los elementos se alineen desde la parte superior */
+  padding: 20px;
+  touch-action: auto;
+  height: 100%;
   width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  margin-top: 200px;
+  
+}
+.titleExperiencia {
+  font-size: 60px;
+  font-family: sans-serif;
+  margin-top: 20px; /* Ajusta según sea necesario */
+  margin-bottom: 20px;
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Centra el texto */
+ 
+}
+.titleProfessionalExperience {
+  font-size: 60px;
+  font-family: sans-serif;
+  margin-bottom:40px;
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Centra el texto */
+ 
+ 
 }
 
-.description a {
+.containerExperiencia {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los cuadrados se alineen uno al lado del otro */
+  justify-content: center; /* Centra horizontalmente los cuadrados */
+  margin-top: 20px; /* Espacio arriba de los cuadrados */
+}
+
+
+
+
+.imgCoding {
+  width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+  filter: brightness(0.4); /* Oscurece la imagen */
+  margin-top: -30px; 
+}
+.cutomSelection{
+
+  height: 100vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  color: white;
+  font-size: 2em;
+  text-align: center;
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+.cuadrados {
+  width: 366px;
+  min-height: 300px; /* Usar min-height en lugar de height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  position: relative; /* Permite posicionar elementos hijos relativos a este cuadrado */
+  z-index: 10;
+  border-radius: 10px;
+  /* Cambiado a 'auto' para permitir el scroll vertical cuando sea necesario */
+  background-color: #1A191D; /* Color de fondo para que sea visible */
+ 
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+
+.cuadradoContent {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+  height: auto; /* Permite que el contenedor crezca según el contenido */
+  overflow: auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+
+}
+.icono {
+  width: 10%; /* Opcional: ajusta el tamaño del contenedor del ícono */
+
+}
+.iconoMobile{
+padding-top: 20px;
+
+}
+.iconoMobile{
+ margin: 5px;
 }
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
+.titulo {
+  font-family: Poppins, sans-serif; /* Fuente específica */
+  font-size: 26px;
   font-weight: 600;
-  margin-bottom: 0.7rem;
+  line-height: 1.2em;
+  flex: 1; /* Ocupa todo el espacio disponible */
+  margin-left: -35px; /* Espacio entre el ícono y el título */
+;
 }
+.tituloPrimero{
+  font-family: Poppins, sans-serif; /* Fuente específica */
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2em;
+  flex: 1; /* Ocupa todo el espacio disponible */
+  margin-left: -35px; /* Espacio entre el ícono y el título */
+  margin-top: 10px;
 
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  text-wrap: balance;
 }
+.tituloSegundo{
+  font-family: Poppins, sans-serif; /* Fuente específica */
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2em;
+  flex: 1; /* Ocupa todo el espacio disponible */
+  margin-left: -20px; /* Espacio entre el ícono y el título */
+margin-top: 34px;
 
-.center {
+
+}
+.circleMotion {
+  position: absolute;
+  top: 20%; /* Ajusta este valor para bajar el círculo dentro del contenedor */
+  left: 58%; /* Ajusta este valor para mover el círculo a la derecha dentro del contenedor */
+  transform: translate(-50%, -50%); /* Ajusta el círculo a la posición deseada */
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  width: 120px; /* Asegúrate de que el ancho sea suficiente para el círculo */
+  height: 120px; /* Asegúrate de que la altura sea suficiente para el círculo */
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+
+.bottomRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+.linea {
+  width: 2px;
+  height: 100px; /* Alto de la línea */
+  background-color: #ffffff;
+  margin-right: 10px; /* Espacio entre la línea y el texto */
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+.parrafo {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  font-size: 16px;
+  color: #a3a3a3;
+ font-family: roboto mono;
+ align-content: end;
+ text-align: left;
+ margin-bottom: 22px;
 }
 
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+.parrafoPrimero {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  font-size: 16px;
+  color: #a3a3a3;
+ font-family: roboto mono;
+ margin-bottom: 70px;
+ margin-top: 20px;
+ text-align: left;
 }
 
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
+.parrafoSegundo{
+  flex: 1; /* Ocupa todo el espacio disponible */
+  font-size: 16px;
+  color: #a3a3a3;
+ font-family: roboto mono;
+ margin-bottom: 50px;
+ margin-top: 20px;
 
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
+text-align: left;
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+}
+.parrafo p {
+  margin-top: 10px; /* Espacio arriba del párrafo */
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
 
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
 
-  .card {
-    padding: 1rem 2.5rem;
-  }
+.circle {
+  width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+  height: 100px;
+  border-radius: 50%; /* Esto hace que el elemento sea un círculo */
+  background-color: '#fff'; /* Color del círculo */
 
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+
+
+
+
+
+
+
+
+
+
+@media (MAX-width:374px) {
+  .cutomSelection{
+
+    height: 190vh;
+    margin-top: 150px;
+  }
+ 
+
+}
+@media (MAX-width:430px) {
+ .titleProfessionalExperience{
+  font-size: 50px;
+
+ }
+  .cuadrados{
+  width: 100%;
+  }
+  .cutomSelection{
+    margin-top: 150px;
+  }
+  .parrafoSegundo{
+
+   margin-bottom: 0px;
+ 
+  
+  
+  }
+  .titleExperiencia {
+    font-size: 50px;
+    margin-top: 40px;
   }
 
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  .containerExperiencia {
+    flex-direction: column; 
   }
+  .cutomSelection{
+
+    height: 170vh;
+
+  }
+  .titleExperiencia {
+    font-size: 40px;
+  
+  }
+
+  .imgCoding {
+    width: 80%; 
+    margin-top: -20px; 
+
+  }
+
+.titleName{
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+.titleSecondary{
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+.titleName h1::after {
+  content: none; 
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
+.tituloPrimero{
+margin-left: 0px;
+}
+.tituloSegundo{
+  margin-left: 0px;
   }
-  to {
-    transform: rotate(0deg);
-  }
+.titulo{
+  margin-left: 0px;
+}
 }

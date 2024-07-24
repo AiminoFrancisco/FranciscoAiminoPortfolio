@@ -1,0 +1,179 @@
+.accordion {
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 10px rgba(59, 123, 133, 0.5);
+  animation: shadowPulse 2s infinite;
+  margin-bottom: 40px;
+}
+
+
+.accordion-item {
+
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 8px;
+  background-color: #1A191D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+  border-top: 2px solid #66D9ED;
+  border-right: 2px solid #66D9ED;
+  border-left: 2px solid #66D9ED;
+  width: 100%;
+}
+.accordion-header.active {
+  background-color: #1A191D;
+ /* Color del borde inferior cuando está abierto */
+
+}
+.accordion-body {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  background-color: #1A191D;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.toggle-icon {
+  font-size: 1.5em;
+  transition: transform 0.3s;
+}
+
+.toggle-icon.open {
+  transform: rotate(180deg);
+}
+
+.accordion-header .title-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.accordion-header .date {
+  margin-left: auto; /* Alinea la fecha a la derecha */
+  margin-right: 20px;
+}
+.descriptionDeTitulosExperienciaLeft{
+  display: block;
+
+  font-size: 16px;
+  color: #999;
+  margin-right: 20%;
+}
+.imgGett {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* YourStyles.css */
+/* YourStyles.css */
+.content {
+  display: flex;
+  align-items: flex-start; /* Alinea verticalmente al inicio */
+  width: 100%;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Toma el espacio restante disponible */
+  /* border: 1px solid red; */
+}
+
+
+.fake-button {
+  display: inline-block;
+  background-color: #1A191D;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: rgb(165, 161, 161);
+  font-size: 16px;
+  align-content: flex-end;
+  margin: 5px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: default; /* Opcional: cambiar el cursor si no quieres que se vea como un botón clickeable */
+  border: 1px solid rgba(102, 217, 237, 0.5);
+ 
+}
+.bordeNaranja{
+ font-weight: 500;
+
+color: #F38816;
+}
+.description {
+  /* border: 1px solid green; */
+}
+
+.image {
+  width: 45%; /* Ajusta el ancho de la imagen según sea necesario */
+  /* border: 1px solid purple; */
+  margin-top: 20px;
+}
+
+.imgGett {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  margin: 10px; /* Espacio entre imágenes */
+  transition: all 0.3s ease;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea todos los elementos a la izquierda */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  font-size: 16px;
+}
+
+
+
+.titulosDeExperiencias{
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+
+}
+
+.descriptionDeTitulosExperiencia{
+  display: block;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #999;
+  margin-right: 20%;
+}
+
+.descriptionDeTitulosExperiencia ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+  .accordion {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 10px rgba(59, 123, 133, 0.5);
+    animation: shadowPulse 2s infinite;
+    margin-bottom: 40px;
+  }
+  
+}
