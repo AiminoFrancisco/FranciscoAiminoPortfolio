@@ -41,6 +41,7 @@ const AccordionItem = ({ title, date,imageSrc, children, isOpen, onClick }) => {
 const AccordionProfessionalExpertise = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -50,7 +51,7 @@ const AccordionProfessionalExpertise = () => {
       <div className="accordion">
         <AccordionItem
           title="Front-end in Wellet"
-          imageSrc="/welletttt.png"
+          imageSrc="/wellet.jpg"
           date="Mayo-2023 - Present"
           isOpen={openIndex === 0}
           onClick={() => handleToggle(0)}
