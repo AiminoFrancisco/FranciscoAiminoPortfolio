@@ -198,7 +198,12 @@ color: #F38816;
     flex-direction: column;
   }
   
- 
+  .accordion-image {
+    /* Asegúrate de que la imagen no esté oculta ni tenga un tamaño incorrecto en dispositivos móviles */
+    width: 30px;
+    height: 30px;
+    margin-left:0px; 
+  }
  
   
   .text {

@@ -27,7 +27,7 @@ const AccordionItem = ({ title, date,imageSrc, children, isOpen, onClick }) => {
             initial={{ height: 0, opacity: 0, scaleY: 0 }}
             animate={{ height: "auto", opacity: 1, scaleY: 1 }}
             exit={{ height: 0, opacity: 0, scaleY: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }} // Ajusta la duración aquí
+            transition={{ duration: 0.5, ease: "easeOut" }}
             style={{ overflow: "hidden" }}
           >
             {children}
