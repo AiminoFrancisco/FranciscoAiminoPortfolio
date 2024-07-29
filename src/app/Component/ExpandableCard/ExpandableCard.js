@@ -50,7 +50,7 @@ const AccordionProfessionalExpertise = () => {
       <div className="accordion">
         <AccordionItem
           title="Front-end in Wellet"
-          imageSrc="/Welletttt.jpg"
+          imageSrc="/welletttt.png"
           date="Mayo-2023 - Present"
           isOpen={openIndex === 0}
           onClick={() => handleToggle(0)}
