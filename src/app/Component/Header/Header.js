@@ -63,7 +63,7 @@ const Header = () => {
             }}
             className={styles.Aimino}
           >
-            AiminoFranciso._
+            AiminoFrancisco._
           </span>
           
         </div>

@@ -101,7 +101,7 @@
   color: rgb(165, 161, 161);
   font-size: 16px;
   align-content: flex-end;
-  margin: 5px;
+  margin: 3px;
   margin-bottom: 20px;
   margin-top: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -109,32 +109,46 @@
   border: 1px solid rgba(102, 217, 237, 0.5);
  
 }
+.accordion-image {
+  width: 40px; /* Ajusta el tamaño según sea necesario */
+  height: 40px;
+  margin-left:10px; /* Espacio entre la imagen y el título */
+
+  border-radius: 50%;
+}
 .bordeNaranja{
  font-weight: 500;
 
 color: #F38816;
 }
-.description {
-  /* border: 1px solid green; */
+
+.bordeAzul{
+  font-weight: 500;
+
+  color: #2C9BE6
+
 }
 
+
+
+
 .image {
-  width: 45%; /* Ajusta el ancho de la imagen según sea necesario */
-  /* border: 1px solid purple; */
+  width: 45%;
   margin-top: 20px;
+  
 }
 
 .imgGett {
-  width: 200px; /* Ajusta el tamaño según tus necesidades */
-  margin: 10px; /* Espacio entre imágenes */
+  width: 200px; 
+  margin: 10px;
   transition: all 0.3s ease;
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinea todos los elementos a la izquierda */
-  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  align-items: flex-start; 
+  text-align: left;
   font-size: 16px;
 }
 
@@ -176,4 +190,27 @@ color: #F38816;
     margin-bottom: 40px;
   }
   
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+ 
+ 
+  
+  .text {
+    width: 100%;
+  }
+
+  .descriptionDeTitulosExperienciaLeft {
+    margin-right: 0;
+  }
+  
+  .descriptionDeTitulosExperiencia {
+    margin-right: 0;
+  }
+ 
 }

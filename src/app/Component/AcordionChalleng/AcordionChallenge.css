@@ -118,4 +118,7 @@
      
       width: 100%;
     }
+    .image {
+      width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+    }
   }

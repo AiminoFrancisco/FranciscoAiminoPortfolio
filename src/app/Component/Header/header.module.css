@@ -10,7 +10,7 @@
   transition: background-color 0.3s;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .header.scrolled {
