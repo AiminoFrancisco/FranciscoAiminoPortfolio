@@ -114,7 +114,7 @@
   height: 40px;
   margin-left:10px; /* Espacio entre la imagen y el título */
 
-  border-radius: 50%;
+  border-radius: 30%;
 }
 .bordeNaranja{
  font-weight: 500;

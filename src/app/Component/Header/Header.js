@@ -59,7 +59,7 @@ const Header = () => {
               fontSize: "26px",
               fontWeight: "bold",
               textAlign: "left",
-              marginTop:'1px'
+      
             }}
             className={styles.Aimino}
           >

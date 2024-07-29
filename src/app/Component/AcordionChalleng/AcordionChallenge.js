@@ -208,9 +208,9 @@ const AccordionChallenge = () => {
               <span className="descriptionDeTitulosChallenge">
                 Utilizando bibliotecas como cv2, numpy Y mutils. Creé un sistema
                 que convierte audios en texto y luego analiza el sentimiento del
-                texto transcrito. Utilicé estas librerias para
-                construir y entrenar los modelos necesarios para ambas tareas,
-                mejorando así la capacidad de análisis de contenido auditivo.
+                texto transcrito. Utilicé estas librerias para construir y
+                entrenar los modelos necesarios para ambas tareas, mejorando así
+                la capacidad de análisis de contenido auditivo.
               </span>
             </span>
           </div>
